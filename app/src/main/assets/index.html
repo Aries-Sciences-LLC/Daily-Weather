@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Weather</title>
+
+
+      <script  src="jQuery/jQuery.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/weather-icons-wind.css">
+      <link rel="stylesheet" href="css/weather-icons.css">
+      <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+
+</head>
+
+<body>
+
+
+<main>
+  <div class="device" id="device">
+    <header id="header"></header>
+    <section>
+      <div class="weather time-morning active" id="morning">
+        <div class="icon">
+          <i id="morning_icon"></i>
+        </div>
+        <div class="content">
+          <h3>Morning</h3>
+          <div class="degrees" id="morning_degrees"></div>
+          <div class="data">
+            <h2 id="morning_type"></h2>
+            <div id="morning_wind"></div>
+            <div id="morning_humidity"></div>
+          </div>
+        </div>
+      </div>
+      <div class="weather time-day" id="day">
+        <div class="icon">
+          <i id="day_icon"></i>
+        </div>
+        <div class="content">
+          <h3>Day</h3>
+          <div class="degrees" id="day_degrees"></div>
+          <div class="data">
+            <h2 id="day_type"></h2>
+            <div id="day_wind"></div>
+            <div id="day_humidity"></div>
+          </div>
+        </div>
+      </div>
+      <div class="weather time-evening" id="evening">
+        <div class="icon">
+          <i id="evening_icon"></i>
+        </div>
+        <div class="content">
+          <h3>Evening</h3>
+          <div class="degrees" id="evening_degrees"></div>
+          <div class="data" id="data">
+            <h2 id="evening_type"></h2>
+            <div id="evening_wind"></div>
+            <div id="evening_humidity"></div>
+          </div>
+        </div>
+      </div>
+      <div class="weather time-night" class="night">
+        <div class="icon">
+          <i id="night_icon"></i>
+        </div>
+        <div class="content">
+          <h3>Night</h3>
+          <div class="degrees" id="night_degrees"></div>
+          <div class="data">
+            <h2 id="night_type"></h2>
+            <div id="night_wind"></div>
+            <div id="night_humidity"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <img src="gifs/loading.gif" alt="Loading..." class="loading_pop_box" width="150" height="150"/>
+  </div>
+</main>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
